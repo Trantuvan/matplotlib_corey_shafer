@@ -36,4 +36,5 @@ plt.xlabel("People Who uses")
 
 plt.tight_layout()
 
-plt.show()
+# plt.show()
+print(row)

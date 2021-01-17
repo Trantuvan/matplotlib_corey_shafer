@@ -203,6 +203,6 @@ plt.legend()
 # automated adjust padding
 plt.tight_layout()
 # save as png
-plt.savefig("/home/van/Documents/matplotlib_corey_shafer/plot.png")
+# plt.savefig("/home/van/Documents/matplotlib_corey_shafer/plot.png")
 # chi can 1 lenh plt.show() thoi de bao hieu ve hinh
 plt.show()
