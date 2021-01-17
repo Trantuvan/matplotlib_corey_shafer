@@ -1,4 +1,3 @@
-import csv
 import numpy as np
 import pandas as pd
 from collections import Counter
@@ -10,13 +9,13 @@ plt.style.use("fivethirtyeight")
 
 data = pd.read_csv(r"/home/van/Documents/matplotlib_corey_shafer/data/data.csv")
 ids = data["Responder_id"]
-lang_reponses = data["LanguagesWorkedWith"]
+lang_responses = data["LanguagesWorkedWith"]
 
 # intantiate counter to count how many times a language appear
 language_counter = Counter()
 
-for reponse in lang_reponses:
-    language_counter.update(reponse.split(";"))
+for response in lang_responses:
+    language_counter.update(response.split(";"))
 
 # read the info in list or in array-like format to input in plot
 languages = []
@@ -39,4 +38,5 @@ plt.xlabel("People Who uses")
 
 plt.tight_layout()
 
-plt.show()
+# plt.show()
+print(type(response))
